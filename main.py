@@ -1,14 +1,12 @@
 import base64
-import io
 from fastapi.encoders import jsonable_encoder
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
-from fastapi import FastAPI, Request, Response
+from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 import segno
 import time
 import pyshorteners
-from PIL import Image
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
